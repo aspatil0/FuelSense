@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#30a7a4"/>
+      <stop offset="1" stop-color="#0e5e72"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="none" />
+  <!-- teal ring -->
+  <circle cx="32" cy="14" r="8" fill="url(#g)" />
+  <!-- orange shaft -->
+  <rect x="30" y="22" width="4" height="18" rx="2" fill="#f98a28" />
+  <polygon points="26,40 38,40 32,48" fill="#f98a28" />
+  <!-- hooks -->
+  <path d="M18 30 Q18 44 32 44 Q46 44 46 30" stroke="#f98a28" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- arrows -->
+  <polygon points="18,26 18,34 10,30" fill="#f98a28" />
+  <polygon points="54,26 54,34 62,30" fill="#f98a28" />
+</svg>
