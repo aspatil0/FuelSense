@@ -35,12 +35,12 @@ const ModuleSelector = ({ onContinue }) => {
       initial="hidden"
       animate="visible"
     >
-      <div className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-        <motion.div variants={itemVariants}>
-          <SmallLogo />
-        </motion.div>
+      <motion.div variants={itemVariants} className="mb-8 text-center">
+        <SmallLogo />
+      </motion.div>
 
-        <motion.div variants={itemVariants} className="text-center mb-6">
+      <div className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+        <motion.div variants={itemVariants} className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-text-dark leading-tight">Get Started</h2>
           <p className="text-text-gray text-sm mt-3">Tell us where you want to start with</p>
         </motion.div>

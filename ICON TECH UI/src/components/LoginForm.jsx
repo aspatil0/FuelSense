@@ -26,17 +26,17 @@ const LoginForm = ({ onLogin }) => {
       initial="hidden"
       animate="visible"
     >
+      <motion.div variants={itemVariants} className="mb-8 text-center">
+        <SmallLogo />
+      </motion.div>
+
+      <motion.div variants={itemVariants} className="text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-medium text-text-dark">Welcome to</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold text-text-dark leading-tight">Icon technologies Portal</h2>
+        <p className="text-text-gray text-sm mt-3">AI-Driven. Shipping Redefined</p>
+      </motion.div>
+
       <div className="bg-white rounded-3xl p-12 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-        <motion.div variants={itemVariants}>
-          <SmallLogo />
-        </motion.div>
-
-        <motion.div variants={itemVariants} className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-medium text-text-dark">Welcome to</h2>
-          <h2 className="text-3xl md:text-4xl font-semibold text-text-dark leading-tight">Icon technologies Portal</h2>
-          <p className="text-text-gray text-sm mt-3">AI-Driven. Shipping Redefined</p>
-        </motion.div>
-
         <form onSubmit={(e) => { e.preventDefault(); onLogin && onLogin(); }} className="space-y-5">
           <motion.div variants={itemVariants}>
             <label className="block text-sm font-medium text-text-dark mb-1.5">Username</label>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const AnimatedShip = () => {
+const AnimatedShip = ({ zOverride = 30 }) => {
   // Ship entry animation from the right
   const shipVariants = {
     hidden: {
@@ -52,7 +52,10 @@ const AnimatedShip = () => {
   };
 
   return (
-    <div className="absolute top-1/2 left-1/2 w-[900px] -translate-x-[30%] -translate-y-1/2 pointer-events-none z-20 pointer-events-none">
+    <div
+      className="absolute top-1/2 left-1/2 w-[400px] sm:w-[400px] md:w-[600px] lg:w-[900px] -translate-x-[30%] -translate-y-1/2 pointer-events-none"
+      style={{ zIndex: zOverride }}
+    >
       <motion.div
         initial="hidden"
         animate="visible"
